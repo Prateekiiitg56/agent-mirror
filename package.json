@@ -1,0 +1,13 @@
+{
+    "name": "agent-mirror",
+    "version": "1.0.0",
+    "description": "Agent Mirror - An AI that shows merchants how shopping agents interpret their store",
+    "private": true,
+    "scripts": {
+        "start": "concurrently \"npm run start --prefix server\" \"npm run dev --prefix client\"",
+        "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+    },
+    "dependencies": {
+        "concurrently": "^8.0.0"
+    }
+}
